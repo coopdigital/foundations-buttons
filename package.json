@@ -2,7 +2,7 @@
   "name": "@coopdigital/foundations-buttons",
   "version": "1.0.2",
   "description": "Co-op Foundations: Buttons",
-  "main": "src/buttons.css",
+  "main": "dist/buttons.css",
   "style": "src/buttons.pcss",
   "author": "Matt Tyas (matt.tyas@coopdigital.co.uk)",
   "license": "MIT",

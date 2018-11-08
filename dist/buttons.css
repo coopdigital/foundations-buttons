@@ -1,0 +1,213 @@
+/* ================================================
+ * Buttons - Co-op Front-end Foundations
+ * ================================================ */
+
+:root {
+  /* MQ Brakpoints */
+  /* 320px */
+  /* 480px */
+  /* 750px */
+  /* 960px */
+  /* 1300px */
+
+  --font-family: "Avenir-Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* Typography: Base */
+  --type-base--body: 1rem;
+  --type-base--h-mega: 2.25rem;
+  --type-base--h1: 1.875rem;
+  --type-base--h2: 1.25rem;
+  --type-base--h3: 1.125rem;
+  --type-base--h4: 1.125rem;
+  --type-base--h5: 1.125rem;
+  --type-base--h6: 0.8125rem;
+  --type-base--blockquote: 1.25rem;
+  --type-base--lead: 1.25rem;
+  --type-base--small: 0.8125rem;
+  --type-base--line-height: 1.7;
+
+  /* Typography: Medium */
+  --type-medium--body: 1.25rem;
+  --type-medium--h-mega: 3rem;
+  --type-medium--h1: 2.875rem;
+  --type-medium--h2: 1.625rem;
+  --type-medium--h3: 1.375rem;
+  --type-medium--h4: 1.375rem;
+  --type-medium--h5: 1.375rem;
+  --type-medium--h6: 1rem;
+  --type-medium--blockquote: 1.625rem;
+  --type-medium--lead: 1.625rem;
+  --type-medium--small: 1rem;
+  --type-medium--base-line-height: 1.6;
+
+  /* Spacing: Base */
+  --spacing-base: 2rem;
+  --spacing-base--3-4: calc(2rem / 4 * 3);
+  --spacing-base--3-4: calc(var(--spacing-base) / 4 * 3);
+  --spacing-base--1-2: calc(2rem / 2);
+  --spacing-base--1-2: calc(var(--spacing-base) / 2);
+  --spacing-base--1-4: calc(2rem / 4);
+  --spacing-base--1-4: calc(var(--spacing-base) / 4);
+  --spacing-base--1-8: calc(2rem / 8);
+  --spacing-base--1-8: calc(var(--spacing-base) / 8);
+
+  /* Spacing: Medium */
+  --spacing-medium: 4rem;
+  --spacing-medium--3-4: calc(4rem / 4 * 3);
+  --spacing-medium--3-4: calc(var(--spacing-medium) / 4 * 3);
+  --spacing-medium--1-2: calc(4rem / 2);
+  --spacing-medium--1-2: calc(var(--spacing-medium) / 2);
+  --spacing-medium--1-4: calc(4rem / 4);
+  --spacing-medium--1-4: calc(var(--spacing-medium) / 4);
+  --spacing-medium--1-8: calc(4rem / 8);
+  --spacing-medium--1-8: calc(var(--spacing-medium) / 8);
+
+  /* Colours */
+  --color-brand: #00B1E7;
+  --color-text: #282828;
+
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* Links */
+  --color-link: #00729A;
+  --color-link--hover: #000102;
+  --color-link--focus: #EEC300;
+  --color-link--active: #005981;
+  --color-link--visited: #004C67;
+
+  /* Buttons */
+  --color-button-primary: #0F8482;
+  --color-button-primary--hover: #2B9E9C;
+  --color-button-primary--active: #0C6D6B;
+
+  --color-button-dark: #374C63;
+  --color-button-dark--hover: #4A6683;
+  --color-button-dark--active: #2E3F53;
+
+  /* default button */
+  --color-button: #374C63;
+  --color-button: var(--color-button-dark);
+  --color-button--hover: #4A6683;
+  --color-button--hover: var(--color-button-dark--hover);
+  --color-button--active: #2E3F53;
+  --color-button--active: var(--color-button-dark--active);
+
+  /* Palette */
+  /* Greyscale */
+  --color-grey-light: #F3F3F3;
+  --color-grey-mid: #C4C4C4;
+  --color-grey-dark: #6E6E6E;
+
+  /* Yellowscale */
+  --color-yellow-bright: #FFFF00;
+  --color-yellow-light: #FFEC00;
+  --color-yellow-mid: #FFD308;
+
+  /* Greenscale */
+  --color-green-bright: #EDFB3C;
+  --color-green-light: #BAD303;
+  --color-green-mid: #4F820D;
+  --color-green-dark: #385C0A;
+
+  /* Turquoisescale - previously GreenBlue */
+  --color-turquoise-bright: #0AFBFB;
+  --color-turquoise-light: #72DCDB;
+  --color-turquoise-mid: #0F8482;
+  --color-turquoise-dark: #166D66;
+
+  /* Bluescale */
+  --color-blue-bright: #418CFC;
+  --color-blue-light: #92D8FE;
+  --color-blue-mid: #326BB7;
+  --color-blue-dark: #334C89;
+
+  /* Pinkscale */
+  --color-pink-bright: #FC43D3;
+  --color-pink-light: #FF80D3;
+
+  /* Purplescale */
+  --color-purple-mid: #AD208E;
+  --color-purple-dark: #61307D;
+
+  /* Orangescale */
+  --color-orange-mid: #F8642C;
+
+  /* Redscale */
+  --color-red-mid: #D63118;
+  --color-red-dark: #9F2A00;
+}
+
+.coop-btn {
+    display: inline-block;
+    padding: calc(2rem / 4) calc(calc(2rem / 2) * 1.25);
+    padding: var(--spacing-base--1-4) calc(var(--spacing-base--1-2) * 1.25);
+    color: #FFFFFF;
+    color: var(--color-white);
+    background: #374C63;
+    background: var(--color-button-dark);
+    font-family: "Avenir-Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
+    font-weight: 500;
+    text-align: center;
+    border: 0;
+    border-radius: 7px;
+    transition: all 0.15s linear;
+    outline: none;
+}
+
+.coop-btn:hover,
+.coop-btn:focus {
+    background: #4A6683;
+    background: var(--color-button-dark--hover);
+    border: 0;
+}
+
+.coop-btn:focus {
+    transition: none;
+    outline: 2px dotted #EEC300;
+    outline: 2px dotted var(--color-link--focus);
+    outline-offset: 3px;
+}
+
+.coop-btn:active {
+    background: #2E3F53;
+    background: var(--color-button-dark--active);
+    outline: 0;
+}
+
+.coop-btn--primary {
+    background: #0F8482;
+    background: var(--color-button-primary);
+}
+
+.coop-btn--primary:hover,
+.coop-btn--primary:focus {
+    background: #2B9E9C;
+    background: var(--color-button-primary--hover);
+}
+
+.coop-btn--active:active {
+    background: #0C6D6B;
+    background: var(--color-button-primary--active);
+}
+
+.coop-btn--full {
+  width: 100%;
+}
+
+.coop-btn--small {
+  padding: calc(calc(2rem / 4) / 3) calc(2rem / 4);
+  padding: calc(var(--spacing-base--1-4) / 3) var(--spacing-base--1-4);
+  font-size: 0.8rem;
+}
+
+.coop-btn--medium {
+  padding: calc(calc(2rem / 4) / 2) calc(2rem / 4);
+  padding: calc(var(--spacing-base--1-4) / 2) var(--spacing-base--1-4);
+}
+
+.coop-btn--large {
+  padding: calc(2rem / 4) calc(2rem / 2);
+  padding: var(--spacing-base--1-4) var(--spacing-base--1-2);
+}
