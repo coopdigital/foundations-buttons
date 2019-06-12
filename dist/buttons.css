@@ -15,6 +15,7 @@
 /* 1300px */
 
 :root {
+
   --font-family: "Avenir-Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   /* Typography: Base */
@@ -60,27 +61,27 @@
   --spacing-medium--1-8: calc(var(--spacing-medium) / 8);
 
   /* Colours */
-  --color-brand: #00b1e7;
+  --color-brand: #00B1E7;
   --color-text: #282828;
 
-  --color-white: #ffffff;
+  --color-white: #FFFFFF;
   --color-black: #000000;
 
   /* Links */
-  --color-link: #00729a;
+  --color-link: #00729A;
   --color-link--hover: #000102;
-  --color-link--focus: #eec300;
+  --color-link--focus: #EEC300;
   --color-link--active: #005981;
-  --color-link--visited: #004c67;
+  --color-link--visited: #004C67;
 
   /* Buttons */
-  --color-button-primary: #0f8482;
-  --color-button-primary--hover: #2b9e9c;
-  --color-button-primary--active: #0c6d6b;
+  --color-button-primary: #0F8482;
+  --color-button-primary--hover: #2B9E9C;
+  --color-button-primary--active: #0C6D6B;
 
-  --color-button-dark: #374c63;
-  --color-button-dark--hover: #4a6683;
-  --color-button-dark--active: #2e3f53;
+  --color-button-dark: #374C63;
+  --color-button-dark--hover: #4A6683;
+  --color-button-dark--active: #2E3F53;
 
   /* default button */
   --color-button: var(--color-button-dark);
@@ -89,56 +90,56 @@
 
   /* Palette */
   /* Greyscale */
-  --color-grey-light: #f3f3f3;
-  --color-grey-mid: #c4c4c4;
-  --color-grey-dark: #6e6e6e;
+  --color-grey-light: #F3F3F3;
+  --color-grey-mid: #C4C4C4;
+  --color-grey-dark: #6E6E6E;
 
   /* Yellowscale */
-  --color-yellow-bright: #ffff00;
-  --color-yellow-light: #ffec00;
-  --color-yellow-mid: #ffd308;
+  --color-yellow-bright: #FFFF00;
+  --color-yellow-light: #FFEC00;
+  --color-yellow-mid: #FFD308;
 
   /* Greenscale */
-  --color-green-bright: #edfb3c;
-  --color-green-light: #bad303;
-  --color-green-mid: #4f820d;
-  --color-green-dark: #385c0a;
+  --color-green-bright: #EDFB3C;
+  --color-green-light: #BAD303;
+  --color-green-mid: #4F820D;
+  --color-green-dark: #385C0A;
 
   /* Turquoisescale - previously GreenBlue */
-  --color-turquoise-bright: #0afbfb;
-  --color-turquoise-light: #72dcdb;
-  --color-turquoise-mid: #0f8482;
-  --color-turquoise-dark: #166d66;
+  --color-turquoise-bright: #0AFBFB;
+  --color-turquoise-light: #72DCDB;
+  --color-turquoise-mid: #0F8482;
+  --color-turquoise-dark: #166D66;
 
   /* Bluescale */
-  --color-blue-bright: #418cfc;
-  --color-blue-light: #92d8fe;
-  --color-blue-mid: #326bb7;
-  --color-blue-dark: #334c89;
+  --color-blue-bright: #418CFC;
+  --color-blue-light: #92D8FE;
+  --color-blue-mid: #326BB7;
+  --color-blue-dark: #334C89;
 
   /* Pinkscale */
-  --color-pink-bright: #fc43d3;
-  --color-pink-light: #ff80d3;
+  --color-pink-bright: #FC43D3;
+  --color-pink-light: #FF80D3;
 
   /* Purplescale */
-  --color-purple-mid: #ad208e;
-  --color-purple-dark: #61307d;
+  --color-purple-mid: #AD208E;
+  --color-purple-dark: #61307D;
 
   /* Orangescale */
-  --color-orange-mid: #f8642c;
+  --color-orange-mid: #F8642C;
 
   /* Redscale */
-  --color-red-mid: #d63118;
-  --color-red-dark: #9f2a00;
+  --color-red-mid: #D63118;
+  --color-red-dark: #9F2A00;
 }
 
 .coop-btn {
   display: inline-block;
   padding: calc(2rem / 4) calc(calc(2rem / 2) * 1.25);
   padding: var(--spacing-base--1-4) calc(var(--spacing-base--1-2) * 1.25);
-  color: #ffffff;
+  color: #FFFFFF;
   color: var(--color-white);
-  background: #374c63;
+  background: #374C63;
   background: var(--color-button-dark);
   font-size: 1rem;
   font-size: var(--type-base--body);
@@ -150,60 +151,62 @@
   border-radius: 7px;
   transition: all 0.15s linear;
   outline: none;
+  text-decoration: none
 }
 
 @media (min-width: 46.875em) {
-  .coop-btn {
+
+.coop-btn {
     font-size: 1.25rem;
     font-size: var(--type-medium--body);
     padding: calc(4rem / 4) calc(calc(4rem / 2) * 1.25);
-    padding: var(--spacing-medium--1-4) calc(var(--spacing-medium--1-2) * 1.25);
-  }
+    padding: var(--spacing-medium--1-4) calc(var(--spacing-medium--1-2) * 1.25)
 }
+  }
 
 .coop-btn:hover,
 .coop-btn:focus {
-  background: #4a6683;
+  background: #4A6683;
   background: var(--color-button-dark--hover);
-  color: #ffffff;
+  color: #FFFFFF;
   color: var(--color-white);
   border: 0;
 }
 
 .coop-btn:focus {
   transition: none;
-  outline: 2px dotted #eec300;
+  outline: 2px dotted #EEC300;
   outline: 2px dotted var(--color-link--focus);
   outline-offset: 3px;
 }
 
 .coop-btn:active {
-  background: #2e3f53;
+  background: #2E3F53;
   background: var(--color-button-dark--active);
-  color: #ffffff;
+  color: #FFFFFF;
   color: var(--color-white);
   outline: 0;
 }
 
 .coop-btn--primary {
-  background: #0f8482;
+  background: #0F8482;
   background: var(--color-button-primary);
-  color: #ffffff;
+  color: #FFFFFF;
   color: var(--color-white);
 }
 
 .coop-btn--primary:hover,
 .coop-btn--primary:focus {
-  background: #2b9e9c;
+  background: #2B9E9C;
   background: var(--color-button-primary--hover);
-  color: #ffffff;
+  color: #FFFFFF;
   color: var(--color-white);
 }
 
 .coop-btn--active:active {
-  background: #0c6d6b;
+  background: #0C6D6B;
   background: var(--color-button-primary--active);
-  color: #ffffff;
+  color: #FFFFFF;
   color: var(--color-white);
 }
 
@@ -214,40 +217,43 @@
 .coop-btn--small {
   padding: calc(2rem / 8) calc(2rem / 4);
   padding: var(--spacing-base--1-8) var(--spacing-base--1-4);
-  font-size: 0.8rem;
+  font-size: 0.8rem
 }
 
 @media (min-width: 46.875em) {
-  .coop-btn--small {
+
+.coop-btn--small {
     padding: calc(4rem / 8) calc(4rem / 4);
-    padding: var(--spacing-medium--1-8) var(--spacing-medium--1-4);
-  }
+    padding: var(--spacing-medium--1-8) var(--spacing-medium--1-4)
 }
+  }
 
 .coop-btn--medium {
   padding: calc(calc(2rem / 4) / 2) calc(2rem / 4);
-  padding: calc(var(--spacing-base--1-4) / 2) var(--spacing-base--1-4);
+  padding: calc(var(--spacing-base--1-4) / 2) var(--spacing-base--1-4)
 }
 
 @media (min-width: 46.875em) {
-  .coop-btn--medium {
+
+.coop-btn--medium {
     font-size: 1rem;
     font-size: var(--type-base--body);
     padding: calc(calc(4rem / 4) / 2) calc(4rem / 4);
-    padding: calc(var(--spacing-medium--1-4) / 2) var(--spacing-medium--1-4);
-  }
+    padding: calc(var(--spacing-medium--1-4) / 2) var(--spacing-medium--1-4)
 }
+  }
 
 .coop-btn--large {
   padding: calc(2rem / 2) calc(2rem / 2);
   padding: var(--spacing-base--1-2) var(--spacing-base--1-2);
   font-size: 1.25rem;
-  font-size: var(--type-medium--body);
+  font-size: var(--type-medium--body)
 }
 
 @media (min-width: 46.875em) {
-  .coop-btn--large {
+
+.coop-btn--large {
     padding: calc(4rem / 4) calc(4rem / 2);
-    padding: var(--spacing-medium--1-4) var(--spacing-medium--1-2);
-  }
+    padding: var(--spacing-medium--1-4) var(--spacing-medium--1-2)
 }
+  }
