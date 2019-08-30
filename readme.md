@@ -1,3 +1,5 @@
+> **DEPRECATED ⚠️ - This repository has been deprecated in favour of the new [Co-op Front-end repository](https://github.com/coopdigital/coop-frontend). Please use this new repo to manage code or raise an issues.**
+
 # CSS Foundations: Buttons
 This CSS module provides helper and utility classes that allow you to apply Co-op's buttons to your frontend applications and websites.
 
